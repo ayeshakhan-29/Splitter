@@ -25,14 +25,12 @@ Currently, two official plugins are available:
      ```bash
     npm run dev
     ```
-     ```bash
-    npm run dev
-    ```
     This command starts the Vite development server, which will watch your files and automatically reload the browser when changes are made. You can view the application by navigating to http://localhost:5173 in your browser.
 
     *Production*
     To build the production-ready bundle:
-    
+    ```bash
     npm run build
+    ```
 
     This command creates an optimized production build of your application in the dist directory.
