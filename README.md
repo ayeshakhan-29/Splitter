@@ -29,6 +29,23 @@ Currently, two official plugins are available:
 4. `npm run build` and this command creates an optimized production build of your application in the dist directory.
 5. `npm run ssr`. You can [disable javascript in your browser](https://developer.chrome.com/docs/devtools/javascript/disable/), to verify if it can still render.
 
-### Read the documentation
 
-Read [the documentation of vite-plugin-react-pages](https://vitejs.github.io/vite-plugin-react-pages/).
+## Why React and Vite?
+
+React and Vite were chosen for this project due to their powerful combination of features and benefits:
+
+### React
+
+- **Virtual DOM:** React's efficient virtual DOM ensures high performance by minimizing DOM manipulation overhead.
+- **Large Ecosystem:** React has a vast ecosystem of libraries and tools, making it easy to find solutions for various development needs.
+- **Community Support:** React has a large and active community, providing excellent support, resources, and updates.
+- **Component-Based Architecture:** React's component-based architecture allows for building reusable UI components, which simplifies development and maintenance.
+
+### Vite
+
+- **Fast Development:** Vite offers lightning-fast cold server start and instant hot module replacement (HMR), enabling a smooth development experience.
+- **Optimized Bundling:** Vite leverages ESBuild for fast bundling and minification, resulting in small bundle sizes and quick builds.
+- **Modern JavaScript Support:** Vite supports modern JavaScript features out of the box, allowing developers to use the latest language enhancements.
+- **Plugin Ecosystem:** Vite's plugin ecosystem provides additional functionalities and integrations, enhancing the development workflow.
+
+By using React and Vite together, we aim to create a modern, efficient, and productive development environment for building high-quality web applications.
