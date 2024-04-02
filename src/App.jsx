@@ -75,7 +75,7 @@ export default function App() {
               id="bill"
               value={billAmount}
               onChange={(e) => setBillAmount(e.target.value)}
-              className="peer w-full h-full  bg-transparent pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E]  font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
+              className="peer w-full h-full bg-zinc-100  pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E]  font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
               placeholder="0"
             />
           </div>
@@ -214,7 +214,7 @@ export default function App() {
                   setNumberOfPeople(value);
                 }
               }}
-              className={`peer w-full h-full bg-transparent pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E] font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] ${numberOfPeople && parseInt(numberOfPeople) === 0
+              className={`peer w-full h-full bg-gray-100 pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E] font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] ${numberOfPeople && parseInt(numberOfPeople) === 0
                 ? "border-red-500"
                 : "border-blue-gray-200 focus:border-blue-500"
                 }`}
