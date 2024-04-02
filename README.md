@@ -6,15 +6,6 @@ An app to calculate tip and total bill per person.
 You can play with these demo projects in your browser, without installing anything on your machine.
 https://splitter-phi.vercel.app/
 
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 ## Setup
 ### Initialize a demo project locally
 
@@ -49,3 +40,13 @@ React and Vite were chosen for this project due to their powerful combination of
 - **Plugin Ecosystem:** Vite's plugin ecosystem provides additional functionalities and integrations, enhancing the development workflow.
 
 By using React and Vite together, we aim to create a modern, efficient, and productive development environment for building high-quality web applications.
+
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
