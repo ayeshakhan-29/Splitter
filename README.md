@@ -1,3 +1,11 @@
+# Splitter
+
+An app to calculate tip and total bill per person.
+
+## Demo
+
+https://splitter-phi.vercel.app/
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -32,5 +40,4 @@ Currently, two official plugins are available:
     ```bash
     npm run build
     ```
-
     This command creates an optimized production build of your application in the dist directory.
