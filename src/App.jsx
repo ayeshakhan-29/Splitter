@@ -27,10 +27,10 @@ export default function Card() {
     <div className="h-screen">
       <p>hiiii</p>
       <div className="flex justify-center bg-white mt-20 mx-[20rem] rounded-lg">
-        <div className="h-full w-full justify-center max-w-sm border bg-gray-100 p-4">
+        <div className="h-full w-full justify-center max-w-sm m-4 p-4">
           <label htmlFor="bill" className="block text-sm font-medium text-gray-700">Bill</label>
           <div className="relative mt-1 rounded-md shadow-sm">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <div className="absolute inset-y-0 left-0 pl-3 flex pointer-events-none">
               <span className="text-gray-500 sm:text-sm">$</span>
             </div>
             <input
@@ -39,14 +39,14 @@ export default function Card() {
               id="bill"
               value={billAmount}
               onChange={(e) => setBillAmount(e.target.value)}
-              className="block w-full border-transparent focus:border-blue-500 pl-10 pr-3 sm:text-sm rounded-md text-right bg-gray-100 text-custom-color"
+              className="block h-[2rem] w-full border-transparent focus:border-blue-500 pl-10 pr-3 sm:text-sm rounded-md text-right bg-gray-100 text-custom-color"
               placeholder="0"
             />
           </div>
 
 
           {/* Select Tip section */}
-          <div className="p-8 mt-[-28px]">
+          <div className="p-8 mt-[-20px] w-[50rem]">
             <label htmlFor="selectTip" className="block text-sm font-medium text-gray-700 mb-2">Select Tip</label>
             <div className="flex mb-4">
               <button className="mr-4 px-4 py-2 bg-[#114A4E] text-white rounded-md w-[5rem]" onClick={() => setTipPercentage(5)}>5%</button>
@@ -81,17 +81,25 @@ export default function Card() {
         </div>
 
         {/* Tip Per Person */}
-        <div className=" h-full w-full bg-gray-200 rounded-lg px-10 py-5">
-          <div className="p-8">
-            <label className="block text-sm font-medium text-gray-700">Tip Per Person</label>
-            <p className="text-lg font-semibold text-gray-900">${calculateTipPerPerson().tipPerPerson}</p>
+        <div className="flex flex-col justify-center w-full bg-[#114A4E] max-w-sm rounded-lg my-4 mx-2">
+          <div class="p-8 flex justify-between gap-4 items-center">
+            <div>
+              <label class="block text-sm font-medium text-white">Tip Amount</label>
+              <p className="font-normal text-xs text-gray-100">/ person</p>
+            </div>
+
+            <p class="text-4xl font-semibold text-[#26C2AD]">${calculateTipPerPerson().tipPerPerson}</p>
           </div>
 
           {/* Bill Per Person */}
-          <div className="p-8">
-            <label className="block text-sm font-medium text-gray-700">Bill Per Person</label>
-            <p className="text-lg font-semibold text-gray-900">${calculateTipPerPerson().billPerPerson}</p>
+          <div className="p-8 flex justify-between gap-4 items-center">
+            <div>
+              <label class="block text-sm font-medium text-white">Total</label>
+              <p className="font-normal text-xs text-gray-100">/ person</p>
+            </div>
+            <p className="text-4xl font-semibold text-[#26C2AD]">${calculateTipPerPerson().billPerPerson}</p>
           </div>
+          <button className="m-8 bg-[#26C2AD]">RESET</button>
         </div>
       </div>
     </div>
