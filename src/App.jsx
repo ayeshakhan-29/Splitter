@@ -44,7 +44,7 @@ export default function App() {
 
   return (
     <div className=" md:h-screen h-screen w-screen md:w-screen md:flex md:flex-col md:items-center md:justify-center bg-[#c5e4e7]">
-      <div className="text-center md:py-0 py-6">
+      <div className="text-center md:py-0 py-6 md:mb-6">
         <span className="uppercase font-mono text-3xl text-[#114A4E] tracking-widest">
           spli
         </span>
