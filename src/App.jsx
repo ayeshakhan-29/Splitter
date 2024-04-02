@@ -38,7 +38,7 @@ export default function App() {
 
 
   return (
-    <div className="h-full w-screen md:w-full md:h-full md:flex md:flex-wrap md:flex-col md:items-center md:justify-around">
+    <div className="h-screen w-screen md:w-full md:h-full md:flex md:flex-wrap md:flex-col md:items-center md:justify-around">
       <div className="text-center md:py-8 py-6">
         <span className="uppercase font-mono text-3xl text-[#114A4E] tracking-widest">spli</span><br />
         <span className="uppercase font-mono text-3xl mt-2 text-[#114A4E] tracking-widest">tter</span>
@@ -66,7 +66,7 @@ export default function App() {
           <label htmlFor="selectTip" className="block text-sm font-medium text-gray-500 py-4 md:py-4">Select Tip %</label>
           <div className="flex mb-4">
             <button
-              className={`mr-4 px-4 py-2 ${selectedButton === 5 ? 'bg-[#26C2AD] text-[#114A4E]' : 'bg-[#114A4E] text-white'} text-lg font-bold rounded-md w-[5.5rem] md:w-[6.5rem]`}
+              className={`mr-4 px-4 py-2 ${selectedButton === 5 ? 'bg-[#26C2AD] text-[#114A4E]' : 'bg-[#114A4E] text-white'} text-lg font-bold rounded-md w-[5.5rem] md:w-[9.5rem]`}
               onClick={() => { setTipPercentage(5); setSelectedButton(5); }}
             >
               5%
