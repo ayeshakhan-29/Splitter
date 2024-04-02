@@ -28,7 +28,7 @@ Currently, two official plugins are available:
 
 3. **Usage**
 
-    *Development*
+    **Development**
     To start the development server and run the application locally:
      ```bash
     npm run dev
