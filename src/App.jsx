@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import user from "./assets/user.png";
-import Hero from "./Components/Sections/Hero";
 
 export default function App() {
   const defaultTipPerPerson = 0;
@@ -72,21 +71,36 @@ export default function App() {
             <input type="text" className="bg-gray-100 border text-sm border-gray-300 text-[#114A4E] rounded-md px-3 py-2 w-[5.5rem] focus:outline-0" placeholder="Custom" />
           </div>
           {/* Number of People section */}
-          <label className="block text-sm font-medium text-gray-500">Number of People</label>
           <div className="relative mt-1 rounded-md shadow-sm">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <img src={user} className="h-[1rem] py-[2px]" alt="user" />
+              <img src={user} className="h-[1.5rem] py-[2px] mt-5" alt="user" />
+            </div>
+            <div className="flex">
+              <label htmlFor="numberOfPeople" className="block text-sm font-medium text-gray-500">
+                Number of People
+              </label>
+              {numberOfPeople && parseInt(numberOfPeople) === 0 && (
+                <span className="text-red-500 text-sm font-medium ml-20">can't be zero</span>
+              )}
             </div>
             <input
-              type="text"
+              type="number"
               name="numberOfPeople"
               id="numberOfPeople"
               value={numberOfPeople}
-              onChange={(e) => setNumberOfPeople(e.target.value)}
-              className="peer w-full h-full bg-transparent pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E] font-sans font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-blue-500"
+              onChange={(e) => {
+                const value = e.target.value;
+                if (/^\d*$/.test(value)) {
+                  setNumberOfPeople(value);
+                }
+              }}
+              className={`peer w-full h-full bg-transparent pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E] font-sans font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] ${numberOfPeople && parseInt(numberOfPeople) === 0 ? 'border-red-500' : 'border-blue-gray-200 focus:border-blue-500'}`}
               placeholder="0"
             />
           </div>
+
+
+
         </div>
 
         <div className="h-full w-full justify-center md:max-w-sm p-4 mt-[-3rem]">
