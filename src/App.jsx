@@ -89,8 +89,8 @@ export default function App() {
           <div className="flex flex-wrap mb-4 w-full gap-2 justify-between">
             <button
               className={` px-4 py-2 ${selectedButton === 5
-                  ? "bg-[#26C2AD] text-[#114A4E]"
-                  : "bg-[#114A4E] text-white"
+                ? "bg-[#26C2AD] text-[#114A4E]"
+                : "bg-[#114A4E] text-white"
                 } text-lg font-bold rounded-md w-[9rem] md:w-[6.5rem]`}
               onClick={() => {
                 setTipPercentage(5);
@@ -101,8 +101,8 @@ export default function App() {
             </button>
             <button
               className={`px-4 py-2 ${selectedButton === 10
-                  ? "bg-[#26C2AD] text-[#114A4E]"
-                  : "bg-[#114A4E] text-white"
+                ? "bg-[#26C2AD] text-[#114A4E]"
+                : "bg-[#114A4E] text-white"
                 } text-lg font-bold rounded-md w-[9rem] md:w-[6.5rem]`}
               onClick={() => {
                 setTipPercentage(10);
@@ -113,8 +113,8 @@ export default function App() {
             </button>
             <button
               className={`px-4 py-2 ${selectedButton === 15
-                  ? "bg-[#26C2AD] text-[#114A4E]"
-                  : "bg-[#114A4E] text-white"
+                ? "bg-[#26C2AD] text-[#114A4E]"
+                : "bg-[#114A4E] text-white"
                 }  text-lg font-bold rounded-md w-[9rem] md:w-[6.5rem]`}
               onClick={() => {
                 setTipPercentage(15);
@@ -127,8 +127,8 @@ export default function App() {
           <div className="flex mb-4"> */}
             <button
               className={`px-4 py-2 ${selectedButton === 25
-                  ? "bg-[#26C2AD] text-[#114A4E]"
-                  : "bg-[#114A4E] text-white"
+                ? "bg-[#26C2AD] text-[#114A4E]"
+                : "bg-[#114A4E] text-white"
                 }  text-lg font-bold rounded-md w-[9rem] md:w-[6.5rem]`}
               onClick={() => {
                 setTipPercentage(25);
@@ -139,8 +139,8 @@ export default function App() {
             </button>
             <button
               className={` px-4 py-2 ${selectedButton === 50
-                  ? "bg-[#26C2AD] text-[#114A4E]"
-                  : "bg-[#114A4E] text-white"
+                ? "bg-[#26C2AD] text-[#114A4E]"
+                : "bg-[#114A4E] text-white"
                 }  text-lg font-bold rounded-md w-[9rem] md:w-[6.5rem]`}
               onClick={() => {
                 setTipPercentage(50);
@@ -151,7 +151,7 @@ export default function App() {
             </button>
             <input
               type="text"
-              className="bg-gray-100 border md:text-center text-center text-sm md:text-lg font-semibold text-[#114A4E] rounded-md px-3 py-2 w-[9rem] md:w-[6.5rem] outline outline-0 focus:outline-0 border focus:border-2 focus:border-blue-500"
+              className="bg-gray-100 border md:text-center text-center text-base md:text-lg font-semibold text-[#114A4E] rounded-md px-3 py-2 w-[9rem] md:w-[6.5rem] outline outline-0 focus:outline-0 border focus:border-2 focus:border-blue-500"
               placeholder="Custom"
               value={customTipPercentage}
               onChange={(e) => {
@@ -198,7 +198,7 @@ export default function App() {
                 Number of People
               </label>
               {numberOfPeople && parseInt(numberOfPeople) === 0 && (
-                <span className="text-red-500 text-sm font-medium ml-24 md:ml-36 md:py-3 py-3">
+                <span className="text-right md:text-right text-red-500 text-sm font-medium ml-14 md:ml-24 md:py-3 py-3">
                   can't be zero
                 </span>
               )}
@@ -215,8 +215,8 @@ export default function App() {
                 }
               }}
               className={`peer w-full h-full bg-transparent pl-10 pr-3 sm:text-2xl rounded-md text-right bg-zinc-100 text-[#114A4E] font-bold outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 text-lg px-3 py-2.5 rounded-[7px] ${numberOfPeople && parseInt(numberOfPeople) === 0
-                  ? "border-red-500"
-                  : "border-blue-gray-200 focus:border-blue-500"
+                ? "border-red-500"
+                : "border-blue-gray-200 focus:border-blue-500"
                 }`}
               placeholder="0"
             />
@@ -252,7 +252,7 @@ export default function App() {
               </p>
             </div>
             {/* Reset Button */}
-            <div className="flex justify-center items-center md:mt-16">
+            <div className="flex justify-center items-center md:mt-24">
               <button
                 className="m-8 h-[2.5rem] w-[15rem] rounded-lg bg-[#26C2AD]"
                 onClick={resetValues}
