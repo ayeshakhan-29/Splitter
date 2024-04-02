@@ -20,13 +20,13 @@ Currently, two official plugins are available:
 
 3. **Usage**
 
-    Development
+    *Development*
     To start the development server and run the application locally:
     npm run dev
 
     This command starts the Vite development server, which will watch your files and automatically reload the browser when changes are made. You can view the application by navigating to http://localhost:5173 in your browser.
 
-    Production
+    *Production*
     To build the production-ready bundle:
     npm run build
 
