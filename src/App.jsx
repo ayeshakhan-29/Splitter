@@ -54,6 +54,7 @@ export default function App() {
         </span>
       </div>
 
+      {/* Amount section */}
       <div className="h-[44rem] md:h-3/5 grid md:grid-cols-2 bg-white rounded-[1.5rem] m-3 p-2 ">
         <div className="h-full w-full justify-center md:max-w-sm p-4 md:h-full">
           <label
@@ -123,8 +124,7 @@ export default function App() {
             >
               15%
             </button>
-            {/* </div>
-          <div className="flex mb-4"> */}
+
             <button
               className={`px-4 py-2 ${selectedButton === 25
                 ? "bg-[#26C2AD] text-[#114A4E]"
